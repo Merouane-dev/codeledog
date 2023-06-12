@@ -11,7 +11,7 @@ interface IButtonProps {
 
 export default component$<IButtonProps>((props) => {
 	let className = cx(
-		'w-fit px-8 py-2 duration-300 rounded-md text-xl font-extrabold text-center',
+		'w-fit px-8 md:px-12 py-2 duration-300 rounded-md text-xl md:text-3xl font-extrabold text-center',
 		props.className,
 	);
 
