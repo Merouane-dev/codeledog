@@ -13,8 +13,12 @@ export default component$(() => {
 				</div>
 
 				<Button>Rendez-vous en ligne</Button>
+				<div class="w-full flex flex-row items-center gap-2">
+					<img src="/images/instagram.webp" width={36} height={36} alt="Logo Instagram" />
+					<img src="/images/facebook.webp" width={36} height={36} alt="Logo Facebook" />
+				</div>
 			</div>
-			<div class="w-full bg-header bg-cover bg-center h-32 md:h-full" />
+			<div class="w-full bg-header bg-cover bg-center h-80 md:h-full" />
 		</section>
 	);
 });

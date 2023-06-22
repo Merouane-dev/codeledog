@@ -11,6 +11,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				'header': 'url("/images/header.webp")',
+				'footer': 'url("/images/footer.webp")',
 			},
 		},
 	},
