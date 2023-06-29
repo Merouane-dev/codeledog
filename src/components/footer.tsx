@@ -1,5 +1,6 @@
 import {component$} from '@builder.io/qwik';
 import Button from './button';
+import FooterBottom from './footer-bottom';
 
 export default component$(() => {
 	return (
@@ -16,10 +17,7 @@ export default component$(() => {
 			<Button href='tel:+33783659180'>07 83 65 91 80</Button>
 			<div class="h-6" />
 
-			<ul class="flex flex-col md:flex-row gap-6">
-				<li><a>Mentions légales</a></li>
-				<li><a>Conditions d'utilisation</a></li>
-			</ul>
+			<FooterBottom />
 		</footer>
 	);
 });
