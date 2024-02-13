@@ -14,8 +14,12 @@ export default component$(() => {
 
 				<Button href='https://calendly.com/codetdog/etude-de-comportement'>Rendez-vous en ligne</Button>
 				<div class="w-full flex flex-row items-center gap-2">
-					<img src="/images/instagram.webp" width={36} height={36} alt="Logo Instagram" />
-					<img src="/images/facebook.webp" width={36} height={36} alt="Logo Facebook" />
+					<a href="https://www.instagram.com/codetdog/?hl=fr" target="_blank" rel="noreferrer">
+						<img src="/images/instagram.webp" width={36} height={36} alt="Logo Instagram" />
+					</a>
+					<a href="https://www.facebook.com/CodetDog" target="_blank" rel="noreferrer">
+						<img src="/images/facebook.webp" width={36} height={36} alt="Logo Facebook" />
+					</a>
 				</div>
 			</div>
 			<div class="w-full bg-header bg-cover bg-center h-80 md:h-full" />

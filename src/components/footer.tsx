@@ -9,7 +9,7 @@ export default component$(() => {
 			pt-20 pb-8 px-8
 			flex flex-col items-center gap-6 md:gap-14
 			text-center
-			md:bg-footer bg-right-bottom bg-no-repeat
+			2xl:bg-footer bg-right-bottom bg-no-repeat
 		">
 			<h2 class="text-5xl font-extrabold"><span class="text-primary">CODET</span><span class="text-secondary">DOG</span></h2>
 			<h2 class="text-2xl md:text-4xl">Ouvert du Lundi au Samedi de 9h00 - 20h00</h2>

@@ -14,14 +14,16 @@ export default component$(() => {
 		">
 			<h2 class="text-2xl md:text-5xl font-extrabold">Votre chien rencontre ce type de problème ?</h2>
 
-			<div class="border border-white rounded-md flex">
+			<div class="flex-col md:flex-row border border-white rounded-md flex">
 				<button
-					class={cx('py-2 px-6 rounded-md text-xl md:text-3xl font-extrabold text-center', focusedIssueType.value == 'comportement' && 'bg-primary')}
+					// eslint-disable-next-line max-len
+					class={cx('w-[320px] py-2 px-6 rounded-md text-xl md:text-3xl font-extrabold text-center', focusedIssueType.value == 'comportement' && 'bg-primary')}
 					onClick$={() => focusedIssueType.value = 'comportement'}
 				>
 					Comportement</button>
 				<button
-					class={cx('py-2 px-6 rounded-md text-xl md:text-3xl font-extrabold text-center', focusedIssueType.value == 'education' && 'bg-primary')}
+					// eslint-disable-next-line max-len
+					class={cx('w-[320px] py-2 px-6 rounded-md text-xl md:text-3xl font-extrabold text-center', focusedIssueType.value == 'education' && 'bg-primary')}
 					onClick$={() => focusedIssueType.value = 'education'}
 				>
 					Éducation

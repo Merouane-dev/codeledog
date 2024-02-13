@@ -7,6 +7,7 @@ export interface IFonctionnement {
 	summary: string,
 	duration?: string,
 	price?: string,
+	calendly?: string,
 }
 
 export default component$<IFonctionnement>((props: IFonctionnement) => {
@@ -19,10 +20,9 @@ export default component$<IFonctionnement>((props: IFonctionnement) => {
 				<img src='/images/logo-dog.webp' alt='Logo chien' width={49} height={49} />
 				<h2 class="text-xl md:text-3xl font-extrabold">{props.title}</h2>
 			</div>
-			<p class="text-xl md:text-3xl">
-				{props.summary}
-			</p>
-			<Button href={`/fonctionnement/${props.slug}`}>En savoir plus</Button>
+			<div class="pl-16">
+				<Button href={`/fonctionnement/${props.slug}`}>En savoir plus</Button>
+			</div>
 		</section>
 	);
 });

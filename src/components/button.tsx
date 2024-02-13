@@ -3,7 +3,7 @@ import cx from 'classnames';
 
 interface IButtonProps {
 	href?: string;
-	className?: string;
+	class?: string;
 	type?: 'button' | 'submit' | 'reset';
     buttonStyle?: 'primary' | 'secondary';
 	onClick?: () => void;
@@ -11,8 +11,8 @@ interface IButtonProps {
 
 export default component$<IButtonProps>((props) => {
 	let className = cx(
-		'w-fit px-8 md:px-12 py-2 duration-300 rounded-md text-xl md:text-3xl font-extrabold text-center',
-		props.className,
+		'w-fit px-6 md:px-12 py-2 duration-300 rounded-md text-lg md:text-3xl font-extrabold text-center',
+		props.class,
 	);
 
 	if (props.buttonStyle == 'secondary') {

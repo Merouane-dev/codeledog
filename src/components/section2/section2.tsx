@@ -31,7 +31,7 @@ export default component$(() => {
 					<p class="text-secondary font-bold">
 						Séance à domicile ou en extérieur
 					</p>
-					<Button>Contact</Button>
+					<Button href="/contact">Contact</Button>
 				</div>
 			</div>
 		</section>

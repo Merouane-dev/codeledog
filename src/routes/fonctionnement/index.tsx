@@ -14,18 +14,20 @@ export default component$(() => {
 			">
 				<h1 class="text-2xl md:text-5xl font-extrabold">Nous avons des solutions</h1>
 
-				<div class="w-full pl-32 flex flex-row">
-					<img src="/images/fonctionnement-dog.webp" alt='Illustration chien' width={331} height={178} />
-				</div>
-				<div class="px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-					{fonctionnements.map((fonctionnement, i) => (
-						<FonctionnementCard
-							key={i}
-							title={fonctionnement.title}
-							summary={fonctionnement.summary}
-							slug={fonctionnement.slug}
-						/>
-					))}
+				<div class="w-full max-w-[120rem] flex flex-col">
+					<div class="w-full pl-32 flex flex-row">
+						<img src="/images/fonctionnement-dog.webp" alt='Illustration chien' width={331} height={178} />
+					</div>
+					<div class="px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+						{fonctionnements.map((fonctionnement, i) => (
+							<FonctionnementCard
+								key={i}
+								title={fonctionnement.title}
+								summary={fonctionnement.summary}
+								slug={fonctionnement.slug}
+							/>
+						))}
+					</div>
 				</div>
 			</main>
 			<footer class="pt-12 md:pt-48 pb-8 w-full flex flex-col items-center">
@@ -33,10 +35,6 @@ export default component$(() => {
 					<Button href='https://calendly.com/codetdog/etude-de-comportement'>Rendez-vous en ligne</Button>
 				</div>
 				<div class="md:relative md:block flex flex-col w-full items-center gap-6 py-12">
-					<div class="flex flex-col items-center">
-						<h2 class="text-xl md:text-5xl">Etienne Codet</h2>
-						<p class="md:text-2xl">07 83 65 91 80</p>
-					</div>
 					<div class="flex flex-col md:absolute md:left-6 md:top-12">
 						<p>Calendrier et paiement sécurisé en ligne.</p>
 						<img src='/images/paiements.webp' alt='Moyen de paiement' width={326} height={102} />

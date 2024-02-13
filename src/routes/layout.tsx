@@ -17,7 +17,7 @@ export default component$(() => {
 	return (
 		<>
 			<Menu />
-			<div class="min-h-[128px]" />
+			<div class="min-h-[178px]" />
 			<Slot />
 		</>
 	);
