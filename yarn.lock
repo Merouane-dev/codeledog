@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@builder.io/partytown@^0.8.0":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.8.2.tgz#bd3689aac3965d7dc05e56c1bb0ef357fdd1d0b0"
+  integrity sha512-WKGE+SO0qUGirW8J+xOWkHeCkfFEoPPvHnFkcdMl+MY3kDbAcTwjZCzjg27JCvoD0h8fH47FR7DSIss0/S5lyg==
+
 "@builder.io/qwik-city@^1.1.5":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@builder.io/qwik-city/-/qwik-city-1.1.5.tgz#7c0d333046ee8f3cb7692de1251313fe83a90e41"

@@ -3,6 +3,7 @@ import {QwikCityProvider, RouterOutlet, ServiceWorkerRegister} from '@builder.io
 import {RouterHead} from './components/router-head/router-head';
 
 import './global.css';
+import {QwikPartytown} from './components/partytown/partytown';
 
 export default component$(() => {
 	/**
@@ -17,6 +18,8 @@ export default component$(() => {
 			<head>
 				<meta charSet="utf-8" />
 				<link rel="manifest" href="/manifest.json" />
+				<QwikPartytown forward={['dataLayer.push']} />
+				<script async type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-HEYPBT5XG9"></script>
 				<RouterHead />
 			</head>
 			<body lang="en">
